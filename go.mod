@@ -3,8 +3,16 @@ module github.com/bhojpur/ufs
 go 1.17
 
 require (
+	github.com/Microsoft/hcsshim v0.9.1
+	github.com/bhojpur/drive v0.0.2
+	github.com/bhojpur/errors v0.0.1
 	github.com/bhojpur/host v0.0.1
 	github.com/bhojpur/kernel v0.0.1
+	github.com/bhojpur/text v0.0.1
+	github.com/bhojpur/time v0.0.2
+	github.com/containerd/containerd v1.5.7
+	github.com/containerd/continuity v0.2.2
+	github.com/fsnotify/fsnotify v1.5.1
 	github.com/klauspost/compress v1.14.1
 	github.com/lib/pq v1.10.4
 	github.com/pkg/errors v0.9.1
@@ -19,16 +27,7 @@ require (
 )
 
 require (
-	github.com/Microsoft/hcsshim v0.9.1
-	github.com/bhojpur/errors v0.0.1
-	github.com/bhojpur/text v0.0.1
-	github.com/bhojpur/time v0.0.2
-	github.com/containerd/containerd v1.5.7
-)
-
-require (
 	cloud.google.com/go/compute v1.0.0 // indirect
-	github.com/bhojpur/drive v0.0.2 // indirect
 	github.com/bhojpur/units v0.0.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/spdystream v0.1.0 // indirect

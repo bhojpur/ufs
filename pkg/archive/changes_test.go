@@ -375,17 +375,6 @@ func TestChangesDirsMutated(t *testing.T) {
 		{filepath.FromSlash("/dir1"), ChangeDelete},
 		{filepath.FromSlash("/dir2"), ChangeModify},
 	}
-
-	// Note there is slight difference between the Linux and Windows
-	// implementations here. Due to https://github.com/moby/moby/issues/9874,
-	// and the fix at https://github.com/moby/moby/pull/11422, Linux does not
-	// consider a change to the directory time as a change. Windows on NTFS
-	// does. See https://github.com/moby/moby/pull/37982 for more information.
-	//
-	// Note also: https://github.com/moby/moby/pull/37982#discussion_r223523114
-	// that differences are ordered in the way the test is currently written, hence
-	// this is in the middle of the list of changes rather than at the start or
-	// end. Potentially can be addressed later.
 	if runtime.GOOS == "windows" {
 		expectedChanges = append(expectedChanges, Change{filepath.FromSlash("/dir3"), ChangeModify})
 	}
