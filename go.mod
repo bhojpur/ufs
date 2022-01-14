@@ -7,7 +7,6 @@ require (
 	github.com/bhojpur/drive v0.0.2
 	github.com/bhojpur/errors v0.0.1
 	github.com/bhojpur/host v0.0.1
-	github.com/bhojpur/kernel v0.0.1
 	github.com/bhojpur/text v0.0.1
 	github.com/bhojpur/time v0.0.2
 	github.com/containerd/containerd v1.5.7
@@ -29,7 +28,6 @@ require (
 
 require (
 	cloud.google.com/go/compute v1.0.0 // indirect
-	github.com/bhojpur/units v0.0.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/spdystream v0.1.0 // indirect
 	github.com/go-logr/logr v1.2.2 // indirect

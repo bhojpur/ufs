@@ -28,9 +28,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/bhojpur/host/pkg/filesys"
-	"github.com/bhojpur/kernel/pkg/idtools"
-	"github.com/bhojpur/ufs/pkg/archive"
+	archive "github.com/bhojpur/ufs/pkg/archive"
+	filesys "github.com/bhojpur/ufs/pkg/filesys"
+	idtools "github.com/bhojpur/ufs/pkg/idtools"
 	"github.com/sirupsen/logrus"
 )
 
@@ -120,7 +120,7 @@ func (archiver *Archiver) CopyFileWithTar(src, dst string) (retErr error) {
 	}
 
 	if srcSt.IsDir() {
-		return fmt.Errorf("Can't copy a directory")
+		return fmt.Errorf("can't copy a directory")
 	}
 
 	// Clean up the trailing slash. This must be done in an operating
