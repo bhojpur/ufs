@@ -28,7 +28,7 @@ import (
 	"reflect"
 	"testing"
 
-	ioutils "github.com/bhojpur/ufs/pkg/ioutils"
+	ioutils "github.com/bhojpur/cache/pkg/ioutils"
 )
 
 func TestApplyLayerInvalidFilenames(t *testing.T) {

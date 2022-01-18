@@ -32,9 +32,9 @@ import (
 	"syscall"
 	"time"
 
+	pools "github.com/bhojpur/cache/pkg/pools"
 	statistics "github.com/bhojpur/host/pkg/statistics"
 	idtools "github.com/bhojpur/ufs/pkg/idtools"
-	pools "github.com/bhojpur/ufs/pkg/pools"
 	"github.com/sirupsen/logrus"
 )
 

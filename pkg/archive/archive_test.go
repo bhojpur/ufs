@@ -36,8 +36,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/bhojpur/cache/pkg/ioutils"
 	"github.com/bhojpur/ufs/pkg/idtools"
-	"github.com/bhojpur/ufs/pkg/ioutils"
 	"github.com/containerd/containerd/pkg/userns"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

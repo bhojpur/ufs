@@ -25,8 +25,8 @@ import (
 	"os"
 	"path/filepath"
 
+	longpath "github.com/bhojpur/cache/pkg/filepath"
 	"github.com/bhojpur/ufs/pkg/idtools"
-	"github.com/bhojpur/ufs/pkg/longpath"
 )
 
 // fixVolumePathPrefix does platform specific processing to ensure that if

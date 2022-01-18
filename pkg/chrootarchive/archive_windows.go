@@ -23,8 +23,8 @@ package chrootarchive
 import (
 	"io"
 
+	longpath "github.com/bhojpur/cache/pkg/filepath"
 	"github.com/bhojpur/ufs/pkg/archive"
-	"github.com/bhojpur/ufs/pkg/longpath"
 )
 
 // chroot is not supported by Windows

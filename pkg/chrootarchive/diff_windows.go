@@ -26,8 +26,8 @@ import (
 	"os"
 	"path/filepath"
 
+	longpath "github.com/bhojpur/cache/pkg/filepath"
 	"github.com/bhojpur/ufs/pkg/archive"
-	"github.com/bhojpur/ufs/pkg/longpath"
 )
 
 // applyLayerHandler parses a diff in the standard layer format from `layer`, and
